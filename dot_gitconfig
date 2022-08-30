@@ -1,0 +1,19 @@
+[alias]
+	graph = log --graph --all --date-order --find-copies --find-renames --date=short --pretty=format:'%C(red)%h%Creset %C(cyan)%ad%Creset %C(yellow)%an%Creset%Cgreen%d%Creset %s'
+        s = status
+        ss = status -s
+        co = checkout
+	sw = switch
+	swc = switch -c
+	b = branch
+	c = commit
+	cm = commit -m
+	mg = merge
+	ft = fetch
+	st = stash
+
+[user]
+	email = daigoro.abe@systemi.co.jp
+	name = daigoro
+[core]
+	editor = vim
