@@ -14,3 +14,8 @@ bash -c "$(curl --fail --show-error --silent --location https://raw.githubuserco
 ``` sh
  sh -c "$(curl -fsLS https://chezmoi.io/get)" -- init --apply daigoro22
 ```
+
+### 4. Install peco
+``` sh
+sudo apt install peco
+```
