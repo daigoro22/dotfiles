@@ -11,6 +11,11 @@
 	mg = merge
 	ft = fetch
 	st = stash
+	lg1 = log -1
+	lgo = log --oneline
+	lgn = log --name-status --oneline
+	fcm = commit --allow-empty -m \"Initial commit\"
+	cfa = config --get-regexp ^alias
 
 [user]
 	email = daigoro.abe@systemi.co.jp
