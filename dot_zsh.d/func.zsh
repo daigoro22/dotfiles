@@ -36,3 +36,15 @@ alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^
 
 # dockerコンテナに入る。deで実行できる
 alias de='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
+
+# ghq + peco 
+function peco-src () {
+  local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-src
+bindkey '^]' peco-src

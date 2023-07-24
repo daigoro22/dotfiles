@@ -1,1 +1,1 @@
-eval "$(~/.anyenv/bin/anyenv init -)"
+eval "$(anyenv init -)"
